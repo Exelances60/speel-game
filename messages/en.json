@@ -1,0 +1,16 @@
+{
+  "Home": {
+    "welcome": "Welcome to the Spelling Bee Game!",
+    "playGame": "Play Game"
+  },
+  "Layout": {
+    "Home": "Home",
+    "Play": "Play"
+  },
+  "Play": {
+    "time": "Time",
+    "score": "Score",
+    "gameOver": "Game Over",
+    "restart": "Restart"
+  }
+}

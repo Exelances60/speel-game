@@ -1,0 +1,16 @@
+{
+  "Home": {
+    "welcome": "Yazma Yarışmasına Oyununa hoş geldiniz!",
+    "playGame": "Oyunu Oyna"
+  },
+  "Layout": {
+    "Home": "Ana Sayfa",
+    "Play": "Oyna"
+  },
+  "Play": {
+    "time": "Zaman",
+    "score": "Puan",
+    "gameOver": "Oyun Bitti",
+    "restart": "Yeniden Başla"
+  }
+}
