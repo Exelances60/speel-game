@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 const useTimer = () => {
-  const [seconds, setSeconds] = useState(10);
+  const [seconds, setSeconds] = useState(60);
   useEffect(() => {
     let myInterval = setInterval(() => {
       if (seconds > 0) {

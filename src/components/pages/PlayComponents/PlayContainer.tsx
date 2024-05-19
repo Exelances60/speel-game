@@ -23,11 +23,10 @@ const PlayContainer = ({ words }: IPlayContainer) => {
   const [userWords, setUserWords] = useState("");
   const [userScore, setUserScore] = useState(0);
   const { seconds, setSeconds } = useTimer();
-  console.log(currentWord);
 
   const restartGame = () => {
     router.refresh();
-    setSeconds(10);
+    setSeconds(60);
     setUserScore(0);
     setUserWords("");
     setCurrentWord(words[0]);
