@@ -20,7 +20,7 @@ export const fetchWords = async () => {
 
     const data = await response.json();
     return data;
-  } catch (error) {
-    throw new Error("Error fetching words");
+  } catch (error: any) {
+    throw new Error(error.message);
   }
 };
