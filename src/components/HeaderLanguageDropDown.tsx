@@ -11,11 +11,18 @@ import { Button } from "@/components/ui/button";
 import { Flag } from "lucide-react";
 import { changeLanguage } from "@/action/ChangeLangugeAction";
 import { getCookie } from "cookies-next";
+import { useToast } from "./ui/use-toast";
 
 const HeaderLanguageDropDown = () => {
+  const { toast } = useToast();
+
   const currentLanguage = getCookie("locale") || "en";
   const setCurrentLanguage = (language: string) => {
     changeLanguage(language);
+    return toast({
+      title: "Language Changed 🌐",
+      description: `Language changed successfully 🎉 ${language.toUpperCase()} `,
+    });
   };
   return (
     <DropdownMenu>
