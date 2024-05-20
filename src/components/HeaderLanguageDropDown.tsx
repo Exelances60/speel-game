@@ -9,21 +9,11 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { Flag } from "lucide-react";
-import { changeLanguage } from "@/action/ChangeLangugeAction";
-import { getCookie } from "cookies-next";
-import { useToast } from "./ui/use-toast";
+import { useLanguage } from "@/context/LanguageContext";
 
 const HeaderLanguageDropDown = () => {
-  const { toast } = useToast();
+  const { changeLanguageContext, language } = useLanguage();
 
-  const currentLanguage = getCookie("locale") || "en";
-  const setCurrentLanguage = (language: string) => {
-    changeLanguage(language);
-    return toast({
-      title: "Language Changed 🌐",
-      description: `Language changed successfully 🎉 ${language.toUpperCase()} `,
-    });
-  };
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -33,17 +23,17 @@ const HeaderLanguageDropDown = () => {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="center">
         <DropdownMenuItem
-          disabled={currentLanguage === "tr"}
-          className=" justify-center"
-          onClick={() => setCurrentLanguage("tr")}
+          disabled={language === "tr"}
+          className="justify-center"
+          onClick={() => changeLanguageContext("tr")}
         >
           TR
         </DropdownMenuItem>
         <DropdownMenuSeparator />
         <DropdownMenuItem
-          disabled={currentLanguage === "en"}
+          disabled={language === "en"}
           className=" justify-center"
-          onClick={() => setCurrentLanguage("en")}
+          onClick={() => changeLanguageContext("en")}
         >
           EN
         </DropdownMenuItem>

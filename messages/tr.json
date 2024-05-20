@@ -12,5 +12,11 @@
     "score": "Puan",
     "gameOver": "Oyun Bitti",
     "restart": "Yeniden Başla"
+  },
+
+  "LanguageContext": {
+    "languageChange": "Language changed to",
+    "pleaseRestart": "If the words have not changed, refresh the page. 🙏",
+    "restart": "Restart"
   }
 }

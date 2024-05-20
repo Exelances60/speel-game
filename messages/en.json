@@ -12,5 +12,10 @@
     "score": "Score",
     "gameOver": "Game Over",
     "restart": "Restart"
+  },
+  "LanguageContext": {
+    "languageChange": "Dil Degişti",
+    "pleaseRestart": "Eger kelimeler degişmediyse sayfayı yenileyiniz 🙏",
+    "restart": "Yeniden Başla"
   }
 }

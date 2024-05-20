@@ -21,7 +21,6 @@ const PlayPage = async () => {
       letters: word.word.split("").sort(() => 0.5 - Math.random()),
     };
   });
-
   return (
     <div className="w-full h-full">
       <PlayContainer words={randomLetters} />
